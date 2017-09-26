@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Print message') {
+    stage('Install Node') {
       steps {
-        echo 'Hello World'
+        sh 'node --version'
       }
     }
   }
