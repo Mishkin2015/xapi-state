@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Install Node') {
+    stage('System Info') {
       steps {
-        sh 'node --version'
+        sh 'cat /proc/version'
       }
     }
   }
