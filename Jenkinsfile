@@ -7,11 +7,9 @@ pipeline {
 whoami'''
       }
     }
-    stage('Install Node') {
+    stage('Install NVM') {
       steps {
-        sh '''sudo su jenkins
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs'''
+        sh 'curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | bash'
       }
     }
   }
