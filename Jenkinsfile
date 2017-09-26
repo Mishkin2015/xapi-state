@@ -9,7 +9,8 @@ whoami'''
     }
     stage('Install NVM') {
       steps {
-        sh 'curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | bash'
+        sh '''curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | bash
+nvm --version'''
       }
     }
   }
