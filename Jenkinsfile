@@ -7,9 +7,9 @@ pipeline {
 whoami'''
       }
     }
-    stage('Install NVM') {
+    stage('Install LL') {
       steps {
-        sh 'sudo su -c "curl -o- -L http://lrnloc.kr/installv2 > deployll.sh && bash deployll.sh"'
+        sh 'sudo su -c "curl -o- -L http://lrnloc.kr/installv2 > deployll.sh && bash deployll.sh -y 3"'
       }
     }
   }
